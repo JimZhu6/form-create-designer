@@ -26,20 +26,23 @@ export default {
                 label: 'info',
                 value: 'info'
             }, {label: 'error', value: 'error'}]
-        }, {type: 'input', field: 'description', title: '辅助性文字'}, {
-            type: 'switch',
-            field: 'closable',
-            title: '是否可关闭',
-            value: true
-        }, {type: 'switch', field: 'center', title: '文字是否居中', value: true}, {
-            type: 'input',
-            field: 'closeText',
-            title: '关闭按钮自定义文本'
-        }, {type: 'switch', field: 'showIcon', title: '是否显示图标'}, {
-            type: 'select',
-            field: 'effect',
-            title: '选择提供的主题',
-            options: [{label: 'light', value: 'light'}, {label: 'dark', value: 'dark'}]
-        }];
+        }, {type: 'input', field: 'description', title: '辅助性文字'},
+        // {
+        //     type: 'switch',
+        //     field: 'closable',
+        //     title: '是否可关闭',
+        //     value: true
+        // }, {type: 'switch', field: 'center', title: '文字是否居中', value: true}, {
+        //     type: 'input',
+        //     field: 'closeText',
+        //     title: '关闭按钮自定义文本'
+        // },
+        // {type: 'switch', field: 'showIcon', title: '是否显示图标'}, {
+        //     type: 'select',
+        //     field: 'effect',
+        //     title: '选择提供的主题',
+        //     options: [{label: 'light', value: 'light'}, {label: 'dark', value: 'dark'}]
+        // }
+        ];
     }
 };

@@ -6,25 +6,27 @@ export default function form() {
             value: 'left',
             title: '标签位置',
             options: [
-                {value: 'right', label: 'right'},
+                // {value: 'right', label: 'right'},
                 {value: 'left', label: 'left'},
-                {value: 'top', label: 'top'},
+                // {value: 'top', label: 'top'},
             ]
-        }, {
-            type: 'radio',
-            field: 'size',
-            value: 'mini',
-            title: '表单尺寸',
-            options: [
-                {value: 'medium', label: 'medium'},
-                {value: 'small', label: 'small'},
-                {value: 'mini', label: 'mini'},
-            ]
-        }, {
+        },
+        // {
+        //     type: 'radio',
+        //     field: 'size',
+        //     value: 'mini',
+        //     title: '表单尺寸',
+        //     options: [
+        //         {value: 'medium', label: 'medium'},
+        //         {value: 'small', label: 'small'},
+        //         {value: 'mini', label: 'mini'},
+        //     ]
+        // },
+        {
             type: 'input',
             field: 'labelWidth',
             value: '125px',
-            title: '标签宽度',
+            title: '标签宽度（实际渲染单位为rpx）',
         }, {
             type: 'switch',
             field: 'hideRequiredAsterisk',
@@ -35,21 +37,24 @@ export default function form() {
             field: 'showMessage',
             value: true,
             title: '显示校验错误信息',
-        }, {
-            type: 'switch',
-            field: 'inlineMessage',
-            value: false,
-            title: '以行内形式展示校验信息',
-        }, {
+        },
+        // {
+        //     type: 'switch',
+        //     field: 'inlineMessage',
+        //     value: false,
+        //     title: '以行内形式展示校验信息',
+        // },
+        {
             type: 'switch',
             field: 'formCreateSubmitBtn',
             value: true,
             title: '是否显示表单提交按钮',
-        }, {
-            type: 'switch',
-            field: 'formCreateResetBtn',
-            value: false,
-            title: '是否显示表单重置按钮',
         },
+        // {
+        //     type: 'switch',
+        //     field: 'formCreateResetBtn',
+        //     value: false,
+        //     title: '是否显示表单重置按钮',
+        // },
     ];
 }

@@ -85,14 +85,14 @@ export default {
   position: absolute;
   right: 2px;
   bottom: 2px;
-  z-index: 1904;
+  z-index: 101;
 }
 
 .drag-l {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1904
+  z-index: 101
 
 }
 
