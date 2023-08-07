@@ -309,7 +309,7 @@ export default {
                         hideRequiredAsterisk: false,
                         labelPosition: 'left',
                         size: 'mini',
-                        labelWidth: '125px',
+                        labelWidth: '250px',
                         formCreateSubmitBtn: true,
                         formCreateResetBtn: false
                     },
