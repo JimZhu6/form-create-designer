@@ -1,12 +1,11 @@
 {
     "name": "@jim_zhu/form-create-designer",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "好用的vue可视化表单设计器组件",
     "main": "./dist/index.min.js",
     "module": "./dist/index.min.js",
     "unpkg": "./dist/index.min.js",
     "jsdelivr": "./dist/index.min.js",
-    "typings": "./types/index.d.ts",
     "scripts": {
         "clean": "rimraf dist/",
         "dev": "vue-cli-service serve",
@@ -35,8 +34,6 @@
         "CHANGELOG.md",
         "package.json",
         "LICENSE",
-        "src",
-        "types",
         "dist"
     ],
     "author": "jim_zhu",
