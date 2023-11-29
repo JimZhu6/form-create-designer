@@ -32,7 +32,7 @@ export default {
     },
     data() {
         return {
-            column: [{label: 'label', key: 'label'}, {label: 'value', key: 'value'}]
+            column: [{label: 'label', key: 'label'}, {label: 'value', key: 'value'}, {label: 'point', key: 'point'}]
         };
     },
     created() {

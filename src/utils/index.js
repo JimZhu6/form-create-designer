@@ -9,8 +9,8 @@ export function makeRequiredRule() {
 
 export function makeOptionsRule(to, flag) {
     const options = [
-        {'label': 'JSON数据', 'value': 0},
-        {'label': '接口数据', 'value': 1},
+        // {'label': 'JSON数据', 'value': 0},
+        // {'label': '接口数据', 'value': 1},
     ];
 
     const control = [

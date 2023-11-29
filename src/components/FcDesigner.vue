@@ -187,7 +187,7 @@
                         </div>
                     </ElMain>
                 </ElContainer>
-                <ElAside class="_fc-r" width="320px" v-if="!config || config.showConfig !== false">
+                <ElAside class="_fc-r" width="400px" v-if="!config || config.showConfig !== false">
                     <ElContainer style="height: 100%;">
                         <el-header height="40px" class="_fc-r-tabs">
                             <div class="_fc-r-tab" :class="{active: activeTab==='props'}" v-if="!!activeRule || (config && config.showFormConfig === false)"
@@ -211,10 +211,10 @@
                                 <ElDivider>属性配置</ElDivider>
                                 <component :is="FormCreate" v-model="propsForm.api" :rule="propsForm.rule" :option="propsForm.options"
                                             @change="propChange" @removeField="propRemoveField"></component>
-                                <ElDivider v-if="showBaseRule">验证规则</ElDivider>
-                                <component :is="FormCreate" v-show="showBaseRule" v-model="validateForm.api" :rule="validateForm.rule"
+                                <!-- <ElDivider v-if="showBaseRule">验证规则</ElDivider> -->
+                                <!-- <component :is="FormCreate" v-show="showBaseRule" v-model="validateForm.api" :rule="validateForm.rule"
                                             :option="validateForm.options"
-                                            @update:value="validateChange"></component>
+                                            @update:value="validateChange"></component> -->
                             </div>
                         </ElMain>
                     </ElContainer>
@@ -307,9 +307,9 @@ export default {
                     form: {
                         inline: false,
                         hideRequiredAsterisk: false,
-                        labelPosition: 'right',
+                        labelPosition: 'left',
                         size: 'mini',
-                        labelWidth: '125px',
+                        labelWidth: '250px',
                         formCreateSubmitBtn: true,
                         formCreateResetBtn: false
                     },

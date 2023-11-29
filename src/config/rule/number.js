@@ -29,16 +29,28 @@ export default {
             field: 'stepStrictly',
             title: '是否只能输入 step 的倍数',
             props: {min:0}
-        }, {type: 'switch', field: 'disabled', title: '是否禁用计数器'}, {
-            type: 'switch',
-            field: 'controls',
-            title: '是否使用控制按钮',
-            value: true
-        }, {
-            type: 'select',
-            field: 'controlsPosition',
-            title: '控制按钮位置',
-            options: [{label: 'default', value: 'default'}, {label: 'right', value: 'right'}]
-        }, {type: 'input', field: 'placeholder', title: '输入框默认 placeholder'}];
+        }, {type: 'switch', field: 'disabled', title: '是否禁用计数器'},
+        {
+            type: 'inputNumber',
+            field: 'point',
+            title: '分数'
+        },
+        {
+            type: 'inputNumber',
+            field: 'answer',
+            title: '答案'
+        },
+        // {
+        //     type: 'switch',
+        //     field: 'controls',
+        //     title: '是否使用控制按钮',
+        //     value: true
+        // }, {
+        //     type: 'select',
+        //     field: 'controlsPosition',
+        //     title: '控制按钮位置',
+        //     options: [{label: 'default', value: 'default'}, {label: 'right', value: 'right'}]
+        // }, {type: 'input', field: 'placeholder', title: '输入框默认 placeholder'}
+        ];
     }
 };
