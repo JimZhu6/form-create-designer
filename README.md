@@ -1,3 +1,11 @@
+> 本项目根据原来的form-create-designer项目进行了修改，主要是为了适应自己的项目，原项目地址：https://github.com/xaboy/form-create-designer
+
+修改功能：
+- 部分组件增加了计分属性
+- 部分组件删改了其他原有属性
+
+----
+
 <p align="center">
     <a href="http://www.form-create.com">
         <img width="200" src="http://file.lotkk.com/form-create.png">
