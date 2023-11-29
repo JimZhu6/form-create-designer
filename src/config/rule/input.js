@@ -33,6 +33,16 @@ export default {
             title: '最小输入长度',
             props: {min:0}
         },
+        {
+            type: 'inputNumber',
+            field: 'point',
+            title: '分数'
+        },
+        {
+            type: 'input',
+            field: 'answer',
+            title: '答案'
+        },
         // {type: 'switch', field: 'showWordLimit', title: '是否显示输入字数统计'},
         {
             type: 'input',
