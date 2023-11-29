@@ -42,11 +42,11 @@ export interface DragRule {
 }
 
 
-declare const FcDesigner: {
+declare const ZFcDesigner: {
     install: (app: typeof Vue) => any;
 } & ExtendedVue<Vue, {}, {}, {}, {}, {}> & PluginObject<any>;
 
-export default FcDesigner;
+export default ZFcDesigner;
 
 export const formCreate: typeof elmFormCreate;
 export const designerForm: typeof elmFormCreate;

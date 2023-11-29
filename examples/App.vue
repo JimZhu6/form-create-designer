@@ -11,7 +11,7 @@
                 <el-button size="mini" type="danger" @click="showTemplate">生成组件</el-button>
             </div>
         </div>
-        <fc-designer ref="designer"/>
+        <z-fc-designer ref="designer"/>
 
         <ElFooter class="_fc-copyright" height="30px">
           <div class="_fc-b-item">
@@ -165,12 +165,12 @@ export default {
             const rule = this.$refs.designer.getRule();
             const opt = this.$refs.designer.getOption();
             return `<template>
-  <form-create
+  <z-form-create
     v-model="fapi"
     :rule="rule"
     :option="option"
     @submit="onSubmit"
-  ></form-create>
+  ></z-form-create>
 </template>
 
 <script>
@@ -190,7 +190,7 @@ export default {
     }
   }
 }
-<\/script>`;
+<\\/script>`;
         }
     },
     beforeCreate() {

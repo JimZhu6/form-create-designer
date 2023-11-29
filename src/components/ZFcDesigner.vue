@@ -248,7 +248,7 @@ import viewForm from '../utils/form';
 
 
 export default {
-    name: 'FcDesigner',
+    name: 'ZFcDesigner',
     components: {
         draggable,
         ViewForm: viewForm.$form(),

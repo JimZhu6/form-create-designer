@@ -3,11 +3,11 @@ import ELEMENT from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import formCreate from '@form-create/element-ui';
 import App from './App';
-import FcDesigner from '../src/index';
+import ZFcDesigner from '../src/index';
 
 Vue.use(ELEMENT);
 Vue.use(formCreate);
-Vue.component('FcDesigner', FcDesigner);
+Vue.component('ZFcDesigner', ZFcDesigner);
 
 Vue.config.productionTip = false;
 

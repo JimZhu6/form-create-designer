@@ -24,7 +24,7 @@ const OutputOptions = () => {
         format: 'umd',
         dir: 'dist',
         globals,
-        name: 'FcDesigner',
+        name: 'ZFcDesigner',
         entryFileNames: 'index.js',
         sourcemap: false,
         banner: getBanner(banner),

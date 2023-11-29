@@ -57,16 +57,16 @@ npm install @form-create/designer
 
 ```js
 import formCreate from '@form-create/element-ui'
-import FcDesigner from '@form-create/designer'
+import ZFcDesigner from '@form-create/designer'
 
 Vue.use(formCreate)
-Vue.use(FcDesigner)
+Vue.use(ZFcDesigner)
 ```
 
 ## 使用
 
 ```html
-<fc-designer ref="designer"/>
+<z-fc-designer ref="designer"/>
 ```
 
 ## 组件`props`

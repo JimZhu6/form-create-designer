@@ -1,4 +1,4 @@
-import FcDesigner from './components/FcDesigner.vue';
+import ZFcDesigner from './components/ZFcDesigner.vue';
 import DragTool from './components/DragTool.vue';
 import Struct from './components/Struct.vue';
 import Fetch from './components/Fetch.vue';
@@ -43,12 +43,12 @@ designerForm.register('_fc_tool', {
 });
 
 const install = function (Vue) {
-    Vue.component('FcDesigner', FcDesigner);
+    Vue.component('ZFcDesigner', ZFcDesigner);
 };
 
-FcDesigner.install = install;
-FcDesigner.makeOptionsRule = makeOptionsRule;
+ZFcDesigner.install = install;
+ZFcDesigner.makeOptionsRule = makeOptionsRule;
 
-export default FcDesigner;
+export default ZFcDesigner;
 
 export {formCreate, designerForm};
