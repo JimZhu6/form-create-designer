@@ -36,12 +36,12 @@ export default {
         {
             type: 'inputNumber',
             field: 'point',
-            title: '分数'
+            title: '分值'
         },
         {
             type: 'input',
-            field: 'answer',
-            title: '答案'
+            field: 'proper',
+            title: '正确答案'
         },
         // {type: 'switch', field: 'showWordLimit', title: '是否显示输入字数统计'},
         {

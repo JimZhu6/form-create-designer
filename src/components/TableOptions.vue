@@ -4,11 +4,14 @@
             :data="value"
             border
             size="mini"
-            style="width: 100%">
+            style="width: 100%"
+            ref="tableOptions">
             <template v-for="(col,idx) in column">
                 <el-table-column :label="col.label" :key="col.label + idx">
                     <template slot-scope="scope">
-                        <el-input size="mini" :value="scope.row[col.key] || ''"
+                      <el-checkbox v-if="col.key=='proper'" size="mini" v-model="scope.row[col.key]"
+                          @change="(n)=>(scope.row[col.key] = n, onInput(scope.row))"></el-checkbox>
+                        <el-input v-else size="mini" :value="scope.row[col.key] || ''"
                                   @input="(n)=>(scope.row[col.key] = n, onInput(scope.row))"></el-input>
                     </template>
                 </el-table-column>
@@ -32,13 +35,18 @@ export default {
     },
     data() {
         return {
-            column: [{label: 'label', key: 'label'}, {label: 'value', key: 'value'}, {label: 'point', key: 'point'}]
+            column: [{label: '标题', key: 'label'}, {label: '分值', key: 'value'}, {label: '正确答案', key: 'proper'}]
         };
     },
     created() {
         if (!Array.isArray(this.value)) {
             this.$emit('input', []);
         }
+    },
+    mounted () {
+        setTimeout(() => {
+            this.$refs.tableOptions.doLayout();
+        });
     },
     methods: {
         onInput(item) {

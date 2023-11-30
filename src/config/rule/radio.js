@@ -20,8 +20,8 @@ export default {
             $required: false,
             props: {},
             options: [
-                {value: '1', label: '选项1', point:1},
-                {value: '2', label: '选项2', point:2},
+                {value: '1', label: '选项1', proper: true},
+                {value: '2', label: '选项2', proper: false},
             ]
         };
     },

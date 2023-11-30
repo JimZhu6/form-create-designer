@@ -122,7 +122,7 @@ export default {
 }
 
 .drag-mask{
-    z-index: 1900;
+    z-index: 100;
     position: absolute;
     top:0;
     left:0;
