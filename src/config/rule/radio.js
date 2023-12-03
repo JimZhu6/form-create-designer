@@ -20,7 +20,7 @@ export default {
             $required: false,
             props: {},
             options: [
-                {value: '1', label: '选项1', proper: true},
+                {value: '1', label: '选项1', proper: false},
                 {value: '2', label: '选项2', proper: false},
             ]
         };
@@ -28,6 +28,11 @@ export default {
     props() {
         return [
             makeRequiredRule(),
+            {
+                type: 'inputNumber',
+                field: 'point',
+                title: '分值'
+            },
             makeOptionsRule('options'),
             {type: 'switch', field: 'disabled', title: '是否禁用'},
             //  {

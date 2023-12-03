@@ -28,6 +28,11 @@ export default {
     props() {
         return [
             makeRequiredRule(),
+            {
+                type: 'inputNumber',
+                field: 'point',
+                title: '分值'
+            },
             makeOptionsRule('options'),
             // {type: 'switch', field: 'multiple', title: '是否多选'}, {
             //     type: 'switch',
