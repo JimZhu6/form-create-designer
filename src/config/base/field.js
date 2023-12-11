@@ -9,7 +9,7 @@ export default function field() {
             type: 'input',
             field: 'title',
             value: '',
-            title: '字段名称',
+            title: '问题',
         },
         // {
         //     type: 'input',
@@ -32,53 +32,53 @@ export default function field() {
         //         }
         //     }
         // },
-        {
-            type: 'col',
-            props: {
-                span: 24
-            },
-            children: [
-                {
-                    type: 'el-button',
-                    props: {
-                        type: 'primary',
-                        size: 'mini',
-                        icon: 'el-icon-delete',
-                    },
-                    inject: true,
-                    on: {
-                        click({$f}) {
-                            const rule = $f.activeRule;
-                            if (rule) {
-                                rule.__fc__.updateKey();
-                                rule.value = undefined;
-                                rule.__fc__.$api.sync(rule);
-                            }
-                        },
-                    },
-                    native: true,
-                    children: ['清空值']
-                }, {
-                    type: 'el-button',
-                    props: {
-                        type: 'success',
-                        size: 'mini',
-                        icon: 'el-icon-refresh',
-                    },
-                    inject: true,
-                    on: {
-                        click({$f}) {
-                            const rule = $f.activeRule;
-                            if (rule) {
-                                rule.__fc__.updateKey(true);
-                                rule.__fc__.$api.sync(rule);
-                            }
-                        },
-                    },
-                    native: true,
-                    children: ['刷新']
-                },
-            ]
-        }
+        // {
+        //     type: 'col',
+        //     props: {
+        //         span: 24
+        //     },
+        //     children: [
+        //         {
+        //             type: 'el-button',
+        //             props: {
+        //                 type: 'primary',
+        //                 size: 'mini',
+        //                 icon: 'el-icon-delete',
+        //             },
+        //             inject: true,
+        //             on: {
+        //                 click({$f}) {
+        //                     const rule = $f.activeRule;
+        //                     if (rule) {
+        //                         rule.__fc__.updateKey();
+        //                         rule.value = undefined;
+        //                         rule.__fc__.$api.sync(rule);
+        //                     }
+        //                 },
+        //             },
+        //             native: true,
+        //             children: ['清空值']
+        //         }, {
+        //             type: 'el-button',
+        //             props: {
+        //                 type: 'success',
+        //                 size: 'mini',
+        //                 icon: 'el-icon-refresh',
+        //             },
+        //             inject: true,
+        //             on: {
+        //                 click({$f}) {
+        //                     const rule = $f.activeRule;
+        //                     if (rule) {
+        //                         rule.__fc__.updateKey(true);
+        //                         rule.__fc__.$api.sync(rule);
+        //                     }
+        //                 },
+        //             },
+        //             native: true,
+        //             children: ['刷新']
+        //         },
+        //     ]
+        // }
     ];
 }

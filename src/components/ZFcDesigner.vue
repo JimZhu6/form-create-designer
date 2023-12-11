@@ -165,9 +165,9 @@
                 <ElContainer class="_fc-m">
                     <el-header class="_fc-m-tools" height="45">
                         <slot name="handle"></slot>
-                        <el-button type="primary" icon="fc-icon icon-preview" plain round size="mini"
+                        <!-- <el-button type="primary" icon="fc-icon icon-preview" plain round size="mini"
                                    @click="previewFc">预 览
-                        </el-button>
+                        </el-button> -->
                         <el-popconfirm
                             title="清空后将不能恢复，确定要清空吗？"
                             style="margin-left: 10px;"

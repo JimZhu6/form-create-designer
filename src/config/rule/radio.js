@@ -27,14 +27,14 @@ export default {
     },
     props() {
         return [
-            makeRequiredRule(),
+            // makeRequiredRule(),
             {
                 type: 'inputNumber',
                 field: 'point',
                 title: '分值'
             },
             makeOptionsRule('options'),
-            {type: 'switch', field: 'disabled', title: '是否禁用'},
+            // {type: 'switch', field: 'disabled', title: '是否禁用'},
             //  {
             //     type: 'switch',
             //     field: 'type',

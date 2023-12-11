@@ -26,7 +26,7 @@ export default function form() {
             type: 'input',
             field: 'labelWidth',
             value: '250px',
-            title: '标签宽度（实际渲染单位为rpx）',
+            title: '标签宽度',
         }, {
             type: 'switch',
             field: 'hideRequiredAsterisk',
